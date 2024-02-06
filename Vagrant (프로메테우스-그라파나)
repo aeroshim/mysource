@@ -1,4 +1,5 @@
 Vagrant.configure("2") do |config|
+  config.vm.define "davidurbano/prometheus-grafana"
   config.vm.box = "davidurbano/prometheus-grafana"
   config.vm.box_version = "1.0"
 end
@@ -6,10 +7,6 @@ end
 
 
 
-
+# 설치후 grafana 패스워드 변경
 # grafana-cli admin reset-admin-password [new password]
-
-
-
-
 # grafana-cli admin reset-admin-password admin

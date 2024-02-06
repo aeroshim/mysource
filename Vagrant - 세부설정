@@ -1,0 +1,22 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+# Prometheus & Grafana monitoring 
+
+Vagrant.configure("2") do |config|
+  config.vm.define "Prometheus-Grafana" do |cfg|
+    cfg.vm.box = "alvistack/ubuntu-22.04"
+    cfg.vm.provider "virtualbox" do |vb|
+      vb.name = "ProGra_SVR(Prometheus-Grafana)"
+      vb.cpus = 2
+      vb.memory = 2048
+      vb.customize ["modifyvm", :id, "--groups", "/ProGra(Prometheus-Grafana)"]
+    end
+    cfg.vm.host_name = "ProGra_SVR"
+    cfg.vm.network "private_network", ip: "192.168.56.125"
+#   cfg.vm.network "forwarded_port", guest: 22, host: 60010, auto_correct: true, id: "ssh"
+    cfg.vm.synced_folder "../data", "/vagrant", disabled: true 
+    cfg.vm.provision "shell", path: "config.sh"\
+#   cfg.vm.provision "shell", path: "install_pkg.sh", args: [ Ver, "Main" ]
+#   cfg.vm.provision "shell", path: "master_node.sh"\
+  end
+end

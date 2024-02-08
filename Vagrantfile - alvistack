@@ -1,0 +1,14 @@
+# openstack 설치가능 vm
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "alvistack/ubuntu-22.04"
+end
+
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "alvistack/devel-22.04"
+end
+
+
+
+# config.vm.define "alvistack_ubuntu-22.04"

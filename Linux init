@@ -1,6 +1,16 @@
+# 수동 시간 맞추기
+ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
+
+# apt install network-manager
+# apt install net-tools
 
 
 # sudo apt update
 # sudo apt upgrade -y
 # sudo apt-get update
 # sudo apt-get upgrade -y
+
+
+# systemctl status ufw
+# systemctl stop ufw
+# systemctl disable ufw

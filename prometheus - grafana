@@ -1,0 +1,13 @@
+
+
+
+
+wget https://prometheus.io/download/prometheus-2.49.1.linux-amd64.tar.gz
+
+
+
+wget https://github.com/philllipjung/o11ybook/
+
+
+# git clone https://github.com/philllipjung/o11ybook
+

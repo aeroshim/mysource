@@ -3,3 +3,36 @@
 
 # git clone https://github.com/philllipjung/o11ybook
 
+
+# git clone https://github.com/philllipjung/o11ybook
+
+
+ /root/prometheus-2.49.1.linux-amd64 
+
+# prometheus 설치
+
+# wget https://prometheus.io/download/prometheus-2.49.1.linux-amd64.tar.gz
+# sudo mkdir /etc/prometheus
+# sudo mkdir /var/lib/prometheus
+
+# sudo chown -R prometheus. /etc/prometheus
+# sudo chown -R prometheus. /var/lib/prometheus
+
+# sudo cp /root/prometheus-2.49.1.linux-amd64/prometheus /usr/local/bin/ 
+# sudo cp /root/prometheus-2.49.1.linux-amd64/promtool /usr/local/bin/
+
+# sudo chown prometheus. /usr/local/bin/prometheus
+# sudo chown prometheus. /usr/local/bin/promtool
+
+# sudo cp -r /root/prometheus-2.49.1.linux-amd64/consoles /etc/prometheus
+# sudo cp -r /root/prometheus-2.49.1.linux-amd64/console_libraries /etc/prometheus
+
+
+
+
+# sudo chown -R prometheus. /etc/prometheus/consoles
+# sudo chown -R prometheus. /etc/prometheus/console_libraries
+
+
+
+

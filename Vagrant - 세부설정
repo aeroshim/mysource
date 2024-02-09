@@ -23,6 +23,8 @@ end
 
 
 
+=============================================================================
+
 # ubuntu 22.04 
 Vagrant.configure("2") do |config|
   config.vm.define "alvistack_ubuntu2204" do |cfg|
@@ -33,7 +35,7 @@ Vagrant.configure("2") do |config|
       vb.memory = 2048
       vb.customize ["modifyvm", :id, "--groups", "/default_group"]
     end
-  config.vm.network "private_network", ip: "192.168.56.129"
+  config.vm.network "private_network", ip: "192.168.56.131"
   config.vm.provision "shell", path: "config.sh"
   end
 end

@@ -1,1 +1,120 @@
 
+
+pw : !!Doro0707
+
+pw : !!
+ 
+ systemctl restart networkmanager
+ 
+ 
+ 
+======================================================================================
+192.168.56.20   controller        root / vargrant centos7   oepnstack
+192.168.56.21   computer          root / vargrant centos7   openstack
+  
+192.168.56.25   openstack         root / vargrant RHEL9ver 20.04
+
+
+192.168.56.30   openstack         root / vargrant ubuntu22.04   alvistack/ubuntu-22.04 v.01 (원본)
+192.168.56.30   openstack         root / vargrant ubuntu22.04   alvistack/ubuntu-22.04 v.01 (성공)
+-
+
+192.168.56.40   openstack         root / vargrant ubuntu22.04   ubuntu22.04 (원본)   # 회사
+192.168.56.41   openstack         root / vargrant ubuntu22.04   ubuntu22.04 (원본)   # hollys
+192.168.56.42   openstack         root / vargrant ubuntu22.04   ubuntu22.04 (원본)   # home
+
+
+
+
+======   관제 (grafans) ====================================================================
+
+192.168.56.126	  Ansible-Server    root / vargrant   Centos 7       renatofenrir
+192.168.56.125    Ansible-Server    root / vargrant   ubuntu22.04   "generic/ubuntu2204"
+
+
+
+================== ANSIBLE TEST SERVER =================================================
+192.168.56.50	  Ansible-Server    root / vargrant   Centos 7        
+192.168.56.51	  Ansible-Node01    root / vargrant   Centos 7      tnode1-cetnos.exp.com
+192.168.56.54	  Ansible-Node04    root / vargrant   ubuntu 14     tnode2-ubuntu.exp.com
+192.168.56.57	  Ansible-Node07    root / vargrant   RHEL 8        tnode3-rhel.exp.com
+
+tnode1-cetnos.exp.com
+tnode2-ubuntu.exp.com
+tnode3-rhel.exp.com
+
+================== ANSIBLE TEST SERVER =================================================
+IP              호스트명                            OS종류
+192.168.56.50	  Ansible-Server    root / vargrant    
+192.168.56.51	  Ansible-Node01    root / vargrant   centos
+192.168.56.52	  Ansible-Node02	  root / vargrant	  centos
+192.168.56.53	  Ansible-Node03    root / vargrant   centos
+192.168.56.54	  Ansible-Node04    root / vargrant   ubuntu  ver 18.04
+192.168.56.55	  Ansible-Node05    root / vargrant   ubuntu  
+192.168.56.56	  Ansible-Node06    root / vargrant   ubuntu
+192.168.56.57	  Ansible-Node07    root / vargrant   RHEL   !Aaa111222 <--- 192.168.56.34번 복사한 vm    
+
+
+======================================================================================
+
+192.168.56.31   ansible-server          root / vargrant    centOS
+192.168.56.32	  tnode1-centos           root / vargrant    centOS
+192.168.56.33	  tnode2-ubuntu           root / vargrant    ubuntu
+192.168.56.34	  tnode3-rhel             root / vargrant    rhel   !Aaa111222    
+
+
+======================================================================================
+
+Vagrantfile 
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "theJaxon/openStackRocky"
+end
+
+====================================================================================
+
+
+192.168.56.10	  k8s-server        root / vargrant    centOS
+
+192.168.56.101	w1-k8s            root / vargrant    centOS
+192.168.56.102	w2-k8s            root / vargrant    centOS
+192.168.56.103	w3-k8s            root / vargrant    centOS
+
+
+# 192.168.56.31	  Cent7Oracle      / !!Doro... 또는 !Aaa111222 (A첫째 대문자)(oracle 19c 설치완료)
+
+
+
+
+
+192.168.56.151	Ansible-Node151   root / vargrant   / sysmng / ssh 22 --> 2222   (엔서블 
+
+
+192.168.56.80	  Ansible-windows   vagrant / vagrant    / windows Ansible 테스트 서버
+
+
+192.168.56.251	vyos              vagrant / vagrant    / Cisco VX-OS 
+192.168.56.252	vyos              vagrant / vagrant    / Cisco VX-OS 
+
+
+
+
+
+192.168.56.70	  centos7     docker            root / !Aaa111222   /     
+  - root_db_1  (mysq)  (계정/패스워드 : root/redmine -- remine.txt 참조)
+  - docker 설치
+  - redmine 설치
+  - docker-compose up -d (또는  docker-compose -f docker-compose.yml up  
+  - wordpress 설치 
+
+
+192.168.56.72	  nexus   root / !Aaa111222   /     
+
+
+
+192.168.56.95	  EDB-PEM   centos8           (EDP-PEM  설치)    root / vargrant  /  
+192.168.56.97   EDB_R1    centot8           (EDB ver 14 설치 ) root vargrant 
+192.168.56.98   EDB_R1    centot8           (EDB ver 14 설치 ) root vargrant 
+
+   
+  

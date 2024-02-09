@@ -31,7 +31,7 @@ Vagrant.configure("2") do |config|
       vb.name = "ProGra_SVR(Prometheus-Grafana)"
       vb.cpus = 2
       vb.memory = 2048
-      vb.customize ["modifyvm", :id, "--groups", "default"]
+      vb.customize ["modifyvm", :id, "--groups", "/default_group"]
     end
   config.vm.network "private_network", ip: "192.168.56.129"
   config.vm.provision "shell", path: "config.sh"
@@ -49,7 +49,7 @@ Vagrant.configure("2") do |config|
       vb.name = "vb_name_rocky9"
       vb.cpus = 2
       vb.memory = 2048
-      vb.customize ["modifyvm", :id, "--groups", "default"]
+      vb.customize ["modifyvm", :id, "--groups", "/default_group"]
     end
   config.vm.network "private_network", ip: "192.168.56.130"
   config.vm.provision "shell", path: "config.sh"

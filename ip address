@@ -28,8 +28,9 @@ pw : !!
 
 ======   관제 (grafans) ====================================================================
 
-192.168.56.126	  Ansible-Server    root / vargrant   Centos 7       renatofenrir
-192.168.56.125    Ansible-Server    root / vargrant   ubuntu22.04   "generic/ubuntu2204"
+192.168.56.130   vb_name_rocky9    root / vargrant   rocky9       "rockylinux/9"
+
+192.168.56.128   servidor          root / vargrant   ubuntu22.04   "davidurbano/prometheus-grafana"
 
 
 

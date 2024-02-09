@@ -43,14 +43,15 @@ end
 # Rocky Linux9
 
 Vagrant.configure("2") do |config|
-  config.vm.define "rockylinux9" do |cfg|
+  config.vm.define "vm_ddefine_rockylinux9" do |cfg|
   config.vm.box = "rockylinux/9"
     cfg.vm.provider "virtualbox" do |vb|
-      vb.name = "rocky9"
+      vb.name = "vb_name_rocky9"
       vb.cpus = 2
       vb.memory = 2048
+      vb.customize ["modifyvm", :id, "--groups", "default"]
     end
-  config.vm.network "private_network", ip: "192.168.56.127"
+  config.vm.network "private_network", ip: "192.168.56.130"
   config.vm.provision "shell", path: "config.sh"
   end
 end
@@ -60,10 +61,10 @@ end
 # prometeus grafana 설치된 이미지
 
 Vagrant.configure("2") do |config|
-  config.vm.define "davidurbano/prometheus-grafana"
+  config.vm.define "davidurbano/prometheus_grafana"
   config.vm.box = "davidurbano/prometheus-grafana"
     cfg.vm.provider "virtualbox" do |vb|
-      vb.name = "rocky9"
+      vb.name = "davidurbano_prometheus_grafana"
       vb.cpus = 2
       vb.memory = 2048
     end

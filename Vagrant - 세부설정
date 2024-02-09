@@ -30,7 +30,7 @@ Vagrant.configure("2") do |config|
   config.vm.define "alvistack_ubuntu2204" do |cfg|
   config.vm.box = "alvistack/ubuntu-22.04"
     cfg.vm.provider "virtualbox" do |vb|
-      vb.name = "ProGra_SVR(Prometheus-Grafana)"
+      vb.name = "ubuntu2204"
       vb.cpus = 2
       vb.memory = 2048
       vb.customize ["modifyvm", :id, "--groups", "/default_group"]
